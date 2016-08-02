@@ -3,6 +3,7 @@ USER default
 EXPOSE 8080
 ENV RACK_ENV production
 ENV RAILS_ENV production
+ENV MY my
 COPY . /opt/app-root/src/
 RUN set http_proxy="http://surf.proxy.agis.allianz" && \
     set https_proxy="http://surf.proxy.agis.allianz" && \
